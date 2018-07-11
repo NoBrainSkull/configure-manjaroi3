@@ -2,7 +2,7 @@ sub replaceConfig {
   my ($src, $to) = @_;
   my @dest_splited_path = split(/\//, $to);
   my $dest_folder = splice(@dest_splited_path, 0, -1);
-  copy($to, $dest_folder) or die "Backup of $to Failed";
+  copy($to, $dest_folder);
   copy($src, $to) or die "Copy of $src to $to Failed";
   copy($to, $dest_folder) or die "Backup of $to Failed";
 }

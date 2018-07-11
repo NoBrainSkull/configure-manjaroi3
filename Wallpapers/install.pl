@@ -5,7 +5,7 @@ use File::Copy;
 
 require '../utils.pl';
 
-print "### Installing wallpapers. Thank you unsplash.com!"
+print "### Installing wallpapers. Thank you unsplash.com!";
 
 my $HOME = $ENV{"HOME"};
 my $directory = '.';
